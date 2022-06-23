@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кровельные материалы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="wrapper__main">
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <img src="./assets/img/Vector.svg" alt="logo">
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">каталог</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">преимущества</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">примеры работ</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">монтаж</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">отзывы</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">ответы на вопросы</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#" class="header_link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="contact">
+                    <div class="contact__info">
+                        <p><strong>Кровельные и фасадные материалы</strong> в Тюмени и области. </p><br />
+                        <p>Профессиональный монтаж c 2010 года.</p>
+                    </div>
+                    <div class="contact__cavePdf">
+                        <a href="./assets/img/savePDF.png" download="document">
+                            <div class="contact__cavePdf_img">Pdf</div>
+                        </a>
+                        <a href="./assets/save_file/CV_Sviatlana_Matskevich_front_end.jpg" target="_blank"
+                            download><span>Скачать прайс-каталог</span> </a>
+                    </div>
+                    <div class="contact__academLogo"><img src="./assets/img/acdemCrovli.png" alt="img logo"> </div>
+                    <div class="contact__social">
+                        <p>Отвечаем <strong>онлайн</strong> </p>
+                        <div class="contact__socialLinc">
+                            <a href="https://www.whatsapp.com/" target="_blank" class="contact__socialLinc_whatsApp">
+                                <img src="./assets/img/Вотсапп.png" alt="logotip social WhatsApp"></a>
+                            <a href="https://www.viber.com/ru/" target="_blank" class="contact__socialLinc_wiber">
+                                <img src="./assets/img/Вайбер.png" alt="logotip social Wiber"></a>
+                            <a href="https://web.telegram.org/z/" target="_blank" class="contact__socialLinc_telegram">
+                                <img src="./assets/img/Телеграм.png" alt="logotip social telegram"></a>
+                        </div>
+                    </div>
+                    <div class="contact__tell">
+                        <P class="contact__tell_time"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</P>
+                        <P class="contact__tell_number">8 (800) 222-54-60</P>
+                        <P class="contact__tell_callMe"><span>Позвоните мне</span></P>
+                    </div>
+                </section>
+            </div>
+            <nav class="wrapper__main_mobile">
+                <div class="contact__academLogo2 mobile_main"><img src="./assets/img/acdemCrovli.png" alt="img logo">
+                </div>
+                <div class="contact__tell2 mobile_tel">
+                    <P class="contact__tell_time2"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</P>
+                    <P class="contact__tell_number2">8 (800) 222-54-60</P>
+                    <P class="contact__tell_callMe2"><span>Позвоните мне</span></P>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
+            <div class="modal" id="myModal">
+                <span class="close"></span>
+                <h4>Быстро оставить заявку</h4>
+                <p>Введите номер, мы позвоним вам в течение 10 минут в рабочее время</p>
+                <p>Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+                <form id="form-inner">
+                    <label class="form__phon_label" for="phon">Введите номер телефона</label>
+                    <input class="form__phon_input" type="text" id="organization_phone" name="organization_phone"
+                        required class="tel" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" />
+                    <button class="form__phon_button" type="submit"> Позвоните мне<span>&rarr;</span></button>
+
+                    <input class="form__agreement_checkbox" type="checkbox" name="agree" value="yes" id="checkbox" />
+
+                    <label class="form___agreement_label" for="checkbox">Нажимая кнопку вы соглашаетесь с
+                        условиями</label><br />
+                    <a class="form___agreement_link" href="#" target="_blank"> Политики конфиденциальности </a>
+
+                    <div class="error">
+                        <p> Проверьте введённый номер и ознакомьтесь с политикой конфиденциальности</p>
+                        <button class="button__error" type="button"> Ок</button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main class="main">
+            <section class="descript">
+                <div class="descript__fon">
+                    <ul class="descript__text">
+                        <li class="descript__text_item">
+                            <h5><b>Гарантия от 50 лет</b> на материалы и 5 лет на монтаж</h5> <span
+                                class="container"><button class="pulse-button">+</button></span>
+                        </li>
+                        <li class="descript__text_item">
+                            <h5><b>Замер, монтажный проект</b> и еще 4 услуги бесплатно </h5>
+                        </li>
+                        <li class="descript__text_item">
+                            <h5><b>Сметы точны</b> до копейки </h5>
+                        </li>
+                        <li class="descript__text_item">
+                            <h5><b>Поэтапная оплата,</b> кредит или рассрочка </h5>
+                        </li>
+                        <li class="descript__text_item">
+                            <h5><b>Наши крыши в каждом поселке</b> дачном сообществе региона </h5>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="title">
+                <h1>Продажа <span> кровельных материалов</span> в Тюмени и Тюменской области </h1>
+                <div class="title__add">
+                    <img src="./assets/img/Круги.png" alt="img ellipsis">
+                    <h2>и монтаж под ключ</h2>
+                </div>
+                <div class="title__btn">
+                    <button class="title__btn_green btn" type="button">Рассчитать стоимость материалов и монтажа
+                        <span>&rarr;</span></button>
+                    <button class="title__btn_orange btn" type="button">записаться на просмотр объектов
+                        <span>&rarr;</span></button>
+                </div>
+                <div class="title__text_bottom">
+                    <img src="./assets/img/Иконка.png" alt="img hand">
+                    <p><span>Ответьте на несколько вопросов и получите </span>сметную стоимость и 3 подарка за экономию
+                        нашего времени</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
